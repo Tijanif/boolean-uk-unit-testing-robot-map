@@ -40,11 +40,11 @@ describe('Test the movement functions', () => {
   describe('The move down function', () => {
     it('should move the robot down', () => {
       const currentposition = { x: 5, y: 5 };
-      expect(moveDown(currentposition)).toEqual({ x: 5, y: 4 });
+      expect(moveDown(currentposition)).toEqual({ x: 5, y: 6 });
     });
     it('should not cross the boundries', () => {
-      const currentPosition = { x: 5, y: 0 };
-      expect(moveDown(currentPosition)).toEqual({ x: 5, y: 0 });
+      const currentPosition = { x: 5, y: 10 };
+      expect(moveDown(currentPosition)).toEqual({ x: 5, y: 10 });
     });
   });
 });
